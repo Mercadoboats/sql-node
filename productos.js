@@ -31,10 +31,10 @@ knex.schema.createTable('productos',table=>{
 
     //Actualizar algun productos
     
-    await knex('producto').where('id',"=",'1').update({nombre:'Harry Potter'});
+    await knex('productos').where('id',"=",'1').update({nombre:'Harry Potter'});
 
     //Borrar un producto en particular
-    await knex('producto').where('id',"=",'1').del();
+    await knex('productos').where('id',"=",'1').del();
 
 
     knex.destroy();
